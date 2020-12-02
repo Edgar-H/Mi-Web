@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body a {
+  text-decoration: none;
+}
+
+header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.nav-container {
+  width: 100%;
+  padding: 0.5rem;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo-nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo a {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-image: url("https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/kraken_generic_max_width_960/public/purina-desarrollo-y-comportamiento-de-gatos-recien-nacidos.jpg?itok=fD8yYcBj");
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 25px;
+}
+
+.navigation ul li a:hover {
+  border-bottom: solid 2px #17d192;
+}
+
+/* .navigation ul.hide {
+  display: flex;
+} */
+.info-header {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 900;
+}
+
+.my-name {
+  font-size: 5.3em;
+  color: #fff;
+}
+
+h1 {
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 1.5em;
+  border-top: solid 2px #17d192;
+  display: inline;
+}
+
+.social i {
+  font-size: 25px;
+  margin: 0 1% 0 0;
+  padding: 12px;
+  color: #fff;
+}
+
+.img-me {
+  width: 35vw;
+  height: 85vh;
+  background-image: url("../images/header-me.png");
+  background-size: cover;
+  right: 15%;
+  bottom: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+.about-me {
+  background: #efefef;
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  padding-top: 90px;
+}
+
+.about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-text img {
+  height: 65vh;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  text-align: start;
+  color: #262626;
+  padding: 18px;
+}
+
+.learning-title span {
+  position: absolute;
+  margin-top: 18vh;
+}
+
+.learning-title img {
+  width: 65vw;
+}
+
+.learning-text {
+  padding-top: 30px;
+}
+
+.learning-text p {
+  color: #5a6161;
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.learning-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.learning-container div {
+  width: 190px;
+  height: 195px;
+  background: #f5f5f5;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.learning-container div img {
+  width: 165px;
+  height: 165px;
+}
+
+.learning-container div span {
+  color: #5a6161;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.learn-content:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 12px 15px rgba(23, 209, 147, 0.253);
+          box-shadow: 0 12px 15px rgba(23, 209, 147, 0.253);
+}
+
+.proyects-me {
+  background: #efefef;
+  position: relative;
+  padding-top: 90px;
+}
+
+.proyects-content {
+  margin-top: 40px;
+}
+
+.proyects-content p {
+  font-size: 1.8rem;
+  color: #343434;
+  font-weight: 500;
+  text-align: start;
+  border-bottom: solid 1.5px #23ad7e;
+  width: 70%;
+}
+
+.proyects-tarjet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.proyects-tarjet div {
+  width: 230px;
+  height: 180px;
+  background: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 10px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.proyects-tarjet div img {
+  width: 220px;
+  height: 155px;
+  border-radius: 8px;
+}
+
+.proyects-tarjet div span {
+  color: #5a6161;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.tarjet:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 12px 15px rgba(141, 0, 173, 0.417);
+          box-shadow: 0 12px 15px rgba(141, 0, 173, 0.417);
+}
+
+footer {
+  background: #515151;
+  position: relative;
+  padding-top: 20px;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container img {
+  width: 20vw;
+}
+
+.contact {
+  text-align: start;
+  color: #fff;
+}
+
+.contact span {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.contact p {
+  font-size: 1rem;
+  display: inline-block;
+  padding: 10px;
+}
+
+.social-footer p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.social-footer i {
+  font-size: 25px;
+  margin: 2px;
+  padding: 8px;
+  color: #fff;
+}
+
+footer > p {
+  color: #dddddd;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.container-global {
+  width: 85%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.titles-web {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #4b4b4b;
+  border-bottom: solid 2px #8e00ad;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

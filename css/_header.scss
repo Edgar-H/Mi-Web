@@ -1,0 +1,99 @@
+header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.nav-container {
+  width: 100%;
+  padding: 0.5rem;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-image: url("https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/kraken_generic_max_width_960/public/purina-desarrollo-y-comportamiento-de-gatos-recien-nacidos.jpg?itok=fD8yYcBj");
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+}
+
+.navigation ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-size: 25px;
+}
+
+.navigation ul li a:hover {
+  border-bottom: solid 2px #17d192;
+}
+
+/* .navigation ul.hide {
+  display: flex;
+} */
+
+.info-header {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  top: 60%;
+  transform: translateY(-50%);
+  z-index: 900;
+}
+
+.my-name {
+  font-size: 5.3em;
+  color: #fff;
+}
+
+h1 {
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 1.5em;
+  border-top: solid 2px #17d192;
+  display: inline;
+}
+
+.social {
+  i {
+    font-size: 25px;
+    margin: 0 1% 0 0;
+    padding: 12px;
+    color: #fff;
+  }
+}
+
+.img-me {
+  width: 35vw;
+  height: 85vh;
+  background-image: url("../images/header-me.png");
+  background-size: cover;
+  right: 15%;
+  bottom: 0;
+  position: absolute;
+  z-index: 99;
+}
