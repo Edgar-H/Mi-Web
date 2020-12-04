@@ -4,16 +4,16 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  font-size: 1rem;
 }
 
 body a {
   text-decoration: none;
 }
 
+@import "globals";
 @import "header";
 @import "about";
 @import "learning";
-@import "proyects";
-@import "footer";
-@import "globals";
-@import "grid";
+/* @import "proyects"; */
+/* @import "footer"; */

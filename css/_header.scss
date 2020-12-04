@@ -1,11 +1,4 @@
-header {
-  background-image: url("../images/header.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  position: relative;
-}
-
+/* --- Start Navigation --- */
 .nav-container {
   width: 100%;
   padding: 0.5rem;
@@ -20,40 +13,92 @@ header {
 .logo-nav-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
-.logo a {
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  background-image: url("https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/kraken_generic_max_width_960/public/purina-desarrollo-y-comportamiento-de-gatos-recien-nacidos.jpg?itok=fD8yYcBj");
-  background-size: cover;
-  background-position: center;
-  display: block;
+.logo {
+  a {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-image: url("https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/kraken_generic_max_width_960/public/purina-desarrollo-y-comportamiento-de-gatos-recien-nacidos.jpg?itok=fD8yYcBj");
+    background-size: cover;
+    background-position: center;
+    display: block;
+  }
 }
 
-.navigation ul {
-  list-style: none;
+@media only screen and (max-width: 600px) {
+  .logo a {
+    height: 2.2rem;
+    width: 2.2rem;
+  }
 }
 
-.navigation ul li {
-  display: inline-block;
+.menu-icon {
+  display: none;
 }
 
-.navigation ul li a {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #fff;
-  font-size: 25px;
+.navigation {
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        font-size: 1.2rem;
+        margin: 0.2rem;
+      }
+    }
+  }
 }
 
 .navigation ul li a:hover {
   border-bottom: solid 2px #17d192;
 }
 
-/* .navigation ul.hide {
-  display: flex;
+@media only screen and (max-width: 746px) {
+  .menu-icon {
+    display: block;
+    color: #30a76e;
+    cursor: pointer;
+    padding: 0.3rem;
+  }
+  .navigation {
+    width: 100%;
+    margin-top: 1rem;
+    ul {
+      list-style: none;
+      display: none;
+      li {
+        display: block;
+        a {
+          display: block;
+          padding: 0.3rem 0;
+          color: #fff;
+          font-size: 1.2rem;
+          margin: 0.4rem;
+          text-align: start;
+        }
+      }
+    }
+    ul.show {
+      display: block;
+    }
+  }
+}
+/* --- End Navigation --- */
+
+/* --- Start Header info --- */
+/* header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
 } */
 
 .info-header {
@@ -97,3 +142,5 @@ h1 {
   position: absolute;
   z-index: 99;
 }
+
+/* --- End Header info --- */

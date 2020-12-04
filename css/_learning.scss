@@ -1,21 +1,18 @@
 .learning-title {
   span {
     position: absolute;
-    margin-top: 18vh;
-  }
-  img {
-    width: 65vw;
+    margin-top: 12%;
   }
 }
 
 .learning-text {
-  padding-top: 30px;
+  padding-top: 2rem;
   p {
     color: #5a6161;
     font-size: 2.6rem;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -46,4 +43,34 @@
 .learn-content:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 15px rgba(23, 209, 147, 0.253);
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .learning-title {
+    span {
+      margin-top: 10%;
+    }
+  }
+
+  .learning-text {
+    padding-top: 1.2rem;
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .learning-title {
+    span {
+      margin-top: 2%;
+    }
+  }
+
+  .learning-text {
+    padding-top: 1rem;
+    p {
+      margin-bottom: 0.4rem;
+    }
+  }
 }
