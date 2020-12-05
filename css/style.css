@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 body a {
@@ -22,6 +22,12 @@ body a {
   font-weight: 700;
   color: #4b4b4b;
   border-bottom: solid 2px #8e00ad;
+}
+
+@media only screen and (max-width: 746px) {
+  .titles-web {
+    font-size: 2rem;
+  }
 }
 
 /* --- Start Navigation --- */
@@ -100,7 +106,6 @@ body a {
   }
   .navigation {
     width: 100%;
-    margin-top: 1rem;
   }
   .navigation ul {
     list-style: none;
@@ -231,6 +236,24 @@ h1 {
   margin-bottom: 0.8rem;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .learning-title span {
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .learning-title span {
+    margin-top: 5%;
+  }
+  .learning-text {
+    padding-top: 1rem;
+  }
+  .learning-text p {
+    font-size: 1.6rem;
+  }
+}
+
 .learning-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,10 +265,10 @@ h1 {
           justify-content: center;
 }
 
-.learning-container div {
-  width: 190px;
-  height: 195px;
+.learning-item {
   background: #f5f5f5;
+  width: 165px;
+  height: 160px;
   margin: 20px auto;
   border-radius: 10px;
   padding: 15px;
@@ -253,48 +276,99 @@ h1 {
   transition: all 0.25s;
 }
 
-.learning-container div img {
-  width: 165px;
-  height: 165px;
+.learning-item img {
+  width: 135px;
+  height: 135px;
 }
 
-.learning-container div span {
+.learning-item span {
   color: #5a6161;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.learn-content:hover {
+.learning-item:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   -webkit-box-shadow: 0 12px 15px rgba(23, 209, 147, 0.253);
           box-shadow: 0 12px 15px rgba(23, 209, 147, 0.253);
 }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
-  .learning-title span {
-    margin-top: 10%;
-  }
-  .learning-text {
-    padding-top: 1.2rem;
-  }
-  .learning-text p {
-    margin-bottom: 0.5rem;
-  }
-}
-
 @media only screen and (max-width: 600px) {
-  .learning-title span {
-    margin-top: 2%;
+  .learning-item {
+    width: 80px;
+    height: 85px;
+    margin: 10px auto;
+    padding: 10px;
   }
-  .learning-text {
-    padding-top: 1rem;
+  .learning-item img {
+    width: 70px;
+    height: 70px;
   }
-  .learning-text p {
-    margin-bottom: 0.4rem;
+  .learning-item span {
+    font-size: 1rem;
   }
 }
 
-/* @import "proyects"; */
+.proyects-me {
+  background: #efefef;
+  position: relative;
+  padding-top: 90px;
+}
+
+.proyects-content {
+  margin-top: 40px;
+}
+
+.proyects-content p {
+  font-size: 1.8rem;
+  color: #343434;
+  font-weight: 500;
+  text-align: start;
+  border-bottom: solid 1.5px #23ad7e;
+  width: 70%;
+}
+
+.proyects-tarjet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.proyects-tarjet div {
+  width: 230px;
+  height: 180px;
+  background: #fff;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 10px;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.proyects-tarjet div img {
+  width: 220px;
+  height: 155px;
+  border-radius: 8px;
+}
+
+.proyects-tarjet div span {
+  color: #5a6161;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.tarjet:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+  -webkit-box-shadow: 0 12px 15px rgba(141, 0, 173, 0.417);
+          box-shadow: 0 12px 15px rgba(141, 0, 173, 0.417);
+}
+
 /* @import "footer"; */
 /*# sourceMappingURL=style.css.map */
