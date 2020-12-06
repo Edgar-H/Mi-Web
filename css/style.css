@@ -177,7 +177,7 @@ header {
 .img-me img {
   max-width: 100%;
   max-height: 500px;
-  min-width: 370px;
+  /* min-width: 370px; */
 }
 
 @media only screen and (max-width: 767px) {
