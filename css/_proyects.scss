@@ -1,13 +1,12 @@
+/* Start Proyects */
 .proyects-me {
   background: #efefef;
-  position: relative;
-  padding: 90px 0;
+  padding-top: 75px;
 }
 
 .proyects-content {
   margin-top: 40px;
   text-align: end;
-
   p {
     font-size: 1.8rem;
     color: #343434;
@@ -17,7 +16,6 @@
     width: 70%;
   }
   a {
-    text-decoration: none;
     font-size: 1.5rem;
     font-weight: 600;
     color: #707070;
@@ -30,7 +28,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   div {
     width: 20%;
     min-width: 150px;
@@ -61,9 +58,13 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .proyects-me {
+    padding-top: 45px;
+  }
   .proyects-card {
     div {
       width: 80%;
     }
   }
 }
+/* End Proyects */

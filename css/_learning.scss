@@ -1,3 +1,4 @@
+/* Start learning */
 .learning-title {
   span {
     position: absolute;
@@ -42,19 +43,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .learning-item {
   background: #f5f5f5;
-  width: 165px;
-  height: 160px;
+  max-width: 165px;
+  max-height: 160px;
   margin: 20px auto;
   border-radius: 10px;
   padding: 15px;
   transition: all 0.25s;
   img {
-    width: 135px;
-    height: 135px;
+    max-width: 135px;
+    max-height: 135px;
   }
   span {
     color: #5a6161;
@@ -69,16 +71,17 @@
 
 @media only screen and (max-width: 600px) {
   .learning-item {
-    width: 80px;
-    height: 85px;
+    max-width: 80px;
+    max-height: 85px;
     margin: 10px auto;
     padding: 10px;
     img {
-      width: 70px;
-      height: 70px;
+      max-width: 70px;
+      max-height: 70px;
     }
     span {
       font-size: 1rem;
     }
   }
 }
+/* Enda learning */
